@@ -1,38 +1,124 @@
-.App {
+html,
+body {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  color: white;
+  font-size: calc(10px + 1.5vmin);
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #1b1d20;
+  padding: 1rem;
+  width: 27%;
+  min-width: 300px;
+  margin: 0.25rem;
+  flex: 1 1 27%;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-xxlarge {
+  font-size: xx-large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-muted {
+  color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input,
+select,
+option {
+  border: none;
+  border-radius:8px;
+  height: 2rem;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+  color: gray;
+}
+
+.btn {
+  border: none;
+  padding: 0.15rem;
+  border-radius:8px;
+  background-color: #61dafb;
+  font-size: 75%;
+  font-family: inherit;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+.w-100 {
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+@media (min-width: 720px) {
+  .w-sm-50 {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  .w-sm-25 {
+    width: 25%;
   }
 }
